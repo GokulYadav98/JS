@@ -1,0 +1,51 @@
+.container {
+    max-width: 400px;
+    background: lightcyan;
+    height: auto;
+    margin: 40px auto;
+}
+#input_value {
+    width: 200px;
+    border-radius: 1px;
+    margin: 11px;
+    height: 32px;
+    margin-right: -5px;
+}
+.btn {
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    color: #fff;
+    padding: 11px 20px;
+    cursor: pointer;
+    border-radius: 0px;}
+ul {
+    padding: 10px 15px;
+
+}
+ul li.list-item {
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin: 10px 0px;
+    position: relative;
+}
+ul li.list-item span {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: red;
+}
+#clear {
+    background: #000000;
+    color: wheat;
+    padding: 8px;
+    float: right; 
+} 
+h1 {
+    text-align: center;
+}

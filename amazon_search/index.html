@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+        Amazon Search
+        </title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
+        <script src="jquery-3.5.1.min.js"></script>
+    </head>    
+        <body>
+        <nav>
+            <div class="left dflex">
+                <a href="#"><img src="./amazon.png" alt="logo" class="logo"><span>.in</span></a>
+                <div class="item">
+                    <p><i class="fa fa-map-marker"></i> Hello,</p>
+                    <h5>enter your address</h5>
+                </div>
+            </div>
+            <div class="search dflex">
+                <div class="box">
+                    <div class="dflex">
+                        <button class="all" type="button">
+                            All <i class="fa fa-sort-down"></i>
+                        </button>
+                        <input type="text" class="input" onkeyup="BetterFunction(event)" name="" #input id="input">
+                        <button class="submit" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+                    <ul id="dropdown" class="dropdown">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="right dflex">
+                <div class="item right-item">
+                    <div><i class="fa fa-flag"></i></div>
+                    <div class="item">
+                        <p>Hello, Gokul</p>
+                        <h5>Account & Lists  <i class="fa fa-sort-down"></i></h5>
+                    </div>
+                    <div class="item">
+                        <p>returns </p>
+                        <h5>& Orders</h5>
+                    </div>
+                    <div><i class="fa fa-cart"></i>Cart</div>
+                </div>
+            </div>
+        </nav>
+        <nav class="subnavigation">
+            <ul class="submenu">
+                <a href="#"><i class="fa fa-bars"></i><li>All</li></a>
+                <a href="#"><li>Gift Cards</li></a>
+                <a href="#"><li>Amazon Pay</li></a>
+                <a href="#"><li>Amazon Business</li></a>
+                <a href="#"><li>Pet Supplies</li></a>
+                <a href="#"><li>Kinda ebooks</li></a>
+                <a href="#"><li>Beauty</li></a>
+            </ul>
+            <ul>
+                <li> Shopping made easy | Download Amazon App
+            </ul>
+        </nav>
+        <script src="./index.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <script>
+            let counter = 0
+            function getData(args) {
+                console.log("Hitting the service "+ args +" "+ counter++)
+            }
+            let debounce = (fn,delay) =>{
+                let timer;
+                return function(...params) {
+                    let obj = this,arg = arguments
+                    clearTimeout(timer);
+                    timer = setTimeout(()=>{
+                        fn.apply(obj,[...params])
+                    },delay);
+                }
+            }
+            let betterFunction = debounce(getData, 900)
+        </script>
+        <input type="text" onkeyup="betterFunction('debounce')">
+    </body>
+</html>
+

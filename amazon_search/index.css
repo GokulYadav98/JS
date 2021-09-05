@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    display: flex;
+    background: #000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 14px 4px 10px;
+}
+.dflex {
+    display: flex;
+    align-items: center;
+}
+.item {
+    padding: 10px 10px;
+}
+.item:hover {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: -1px;
+    
+}
+.logo{
+    text-align: center;
+    margin: 1px;
+    color: #fff;
+    margin-bottom: -5px;
+    padding: 6px 8px 0 0;
+    height: 42px;
+}
+a{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    text-decoration: none;
+}
+a:hover{
+    border: 1px solid #fff;
+    margin: -1px;
+    border-radius: 3px;
+}
+a span {
+    font-style: 14px;
+    margin-left: -10px;
+}
+p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.item i {
+    padding: 0 5px
+}
+nav input {
+    width: 650px;
+    padding: 10px;
+    height: 40px;
+    font-size: 17px;
+    text-align: left;
+    border: none;
+    color: #000;
+    outline: none;
+}
+button.submit {
+    border-radius: 0px 5px 5px 0px;
+}
+nav button {
+    padding: 10px 10px;
+    color: #000;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+nav .all {
+    background: #ddd;
+    color: #000;
+    max-height: 40px;
+    /* border-radius: 5px; */
+}
+.fa-sort-down {
+    color: #000;
+    margin-bottom: -10px; 
+    text-align: start;      
+}
+
+nav .submit {
+    padding: 10px 17px;
+    margin: -2px;
+    background: rgb(247,155,80);
+}
+nav.subnavigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #232f3e;
+}
+ul.submenu {
+    display: flex;
+    flex-direction: row;
+} 
+ul li {
+    padding: 5px 10px;
+    list-style-type:none;
+}
+.box:hover {
+    border: 3px solid rgb(247,155,80)
+}
+
+.right-item {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+ul.dropdown {
+    position: absolute;
+    color: black;
+    z-index: 30;
+    background: white;
+    /* width: 46%; */
+    margin-left: 54px;
+    width: 650px;
+    margin-top: 2px;
+}
+ul.dropdown:focus {
+    display: block;
+}
+ul.dropdown {
+    display: none;
+}
+ul.dropdown li {
+    color: #000;
+    padding: 10px 10px;
+    /* border: 1px solid #ddd; */
+    width: 100%;
+    text-align: left;
+}
+ul.dropdown li:hover {
+    /* color: #000; */
+    /* padding: 10px 10px; */
+    border: 1px solid #ddd;
+    background: #ddd;
+    /* width: 100%;
+    text-align: left; */
+}

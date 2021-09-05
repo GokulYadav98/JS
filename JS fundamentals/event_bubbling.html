@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <style>
+            div {
+                min-width: 100px;
+                min-height: 100px;
+                padding: 30px;
+                border: 1px solid black;   
+            }
+        </style>
+        <script>
+            // document.getElementById('grandparent').addEventListener("click",()=>{
+            //     console.log("Grand Parent is clicked !")
+            // });
+            console.log(document.querySelector("#parent"))
+            document.querySelector('#grandparent').addEventListener("onclick",()=>{
+                console.log("Grand Parent is clicked !")
+            });
+            document.querySelector('#parent').addEventListener('click',()=>{
+                console.log("Parent is clicked !")
+            });
+            // document.querySelector('#child').addEventListener('click',()=>{
+            //     console.log("child is clicked !")
+            // });
+            // function callGrandParent(){
+            //     console.log("Grand Parent is clicked !")
+            // }
+            // function callParent(){
+            //     console.log("Parent is clicked !")
+            // }
+            // function callChild(){
+            //     console.log("Child is clicked !")
+            // }
+            document.getElementById("myBtn").addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = "Hello World";
+});
+        </script>
+        <div id="grandparent" >
+            <div #parent id="parent">
+                <div id="child">
+
+                </div>
+            </div>
+        </div>
+        <button id="myBtn">Try it</button>
+
+
+    </body>
+</html>
+

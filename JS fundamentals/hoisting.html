@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        console.log("var x value: ",x);
+        console.log("Get Name value: ",getName());
+        console.log("Get Func Def",getName)
+        console.log("var y value:",y);
+        var x = 7;
+        function getName() {
+            console.log("Gokul")
+        }
+        let y = function getDetails() {
+            console.log("Gokul")
+        }
+        console.log("var x value: ",x);
+        console.log("Get Name value: ",getName());
+        console.log("Get Func Def",getName)
+        function set() {
+            for(let i = 0;i <= 5;i++) {
+                // set timeout function is a closure. It copies the reference of 'i' variable
+                setTimeout(() => {
+                    console.log(i);
+                },1000 * i);
+            }
+        }
+
+        set();
+    </script>
+    <!-- <input type="text" onkeyup="betterFunction('debounce')"> -->
+</body>
+
+</html>
